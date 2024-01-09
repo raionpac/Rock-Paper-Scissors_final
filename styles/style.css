@@ -1,0 +1,114 @@
+/* General Styles */
+body,
+#container {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background-color: #ffea00;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+h1 {
+  font-size: 4rem; /* Using rem for scalable font size */
+  color: rgba(0, 0, 0, 0.877);
+}
+
+/* Choices Section */
+.choices {
+  margin-bottom: 30px;
+}
+
+.choices button {
+  font-size: 7rem;
+  min-width: 200px;
+  margin: 0 10px;
+  background-color: #ffea00;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+  border: none; /* Remove default button border */
+  outline: none; /* Remove focus outline */
+}
+
+.choices button:hover,
+.choices button:focus {
+  /* Focus style for accessibility */
+  background-color: #5554497a;
+}
+
+/* Choice Display */
+
+.choiceDisplay {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 30px 0;
+}
+.choiceDisplay img {
+  width: 60px;
+  height: auto;
+  margin: 5px 0;
+}
+
+#playerDisplay,
+#computerDisplay {
+  font-size: 2rem;
+}
+
+/* Result Display */
+#resultDisplay {
+  font-size: 4rem;
+  margin: 20px 0;
+}
+
+/* Score Display */
+.scoreDisplay {
+  font-size: 2rem;
+}
+
+/* Text Color */
+.greenText,
+#playerScoreDisplay {
+  color: rgb(43, 136, 71);
+}
+
+.redText,
+#computerScoreDisplay {
+  color: rgb(175, 15, 15);
+}
+
+#gameInfo {
+  text-align: left;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  .choices button {
+    font-size: 5rem;
+    min-width: 150px;
+  }
+
+  .choiceDisplay img {
+    width: 40px;
+  }
+
+  #playerDisplay,
+  #computerDisplay,
+  #resultDisplay,
+  .scoreDisplay {
+    font-size: 1.5rem;
+  }
+}
+
+#playerChoiceImage,
+#computerChoiceImage {
+  display: none;
+}

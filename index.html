@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test - Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <h1 id="resultDisplay">Pick your Weapon:</h1>
+
+      <div class="choices">
+        <!-- Buttons with ARIA labels for accessibility -->
+        <button aria-label="Choose Rock">
+          <img src="assets/img/rock.svg" alt="Rock" />
+        </button>
+        <button aria-label="Choose Paper">
+          <img src="assets/img/paper.svg" alt="Paper" />
+        </button>
+        <button aria-label="Choose Scissors">
+          <img src="assets/img/scissors.svg" alt="Scissors" />
+        </button>
+      </div>
+
+      <section id="gameInfo">
+        <div id="playerDisplay" class="choiceDisplay">
+          PLAYER: <img id="playerChoiceImage" src="" alt="Player's choice" />
+        </div>
+        <div id="computerDisplay" class="choiceDisplay">
+          COMPUTER:
+          <img id="computerChoiceImage" src="" alt="Computer's choice" />
+        </div>
+        <div id="resultDisplay" aria-live="polite"></div>
+        <div id="scoreDisplay" class="scoreDisplay">
+          Player: <span id="playerScoreDisplay">0</span> | Computer:
+          <span id="computerScoreDisplay">0</span>
+        </div>
+      </section>
+    </div>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
