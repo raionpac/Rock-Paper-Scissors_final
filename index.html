@@ -9,9 +9,8 @@
   <body>
     <div id="container">
       <h1 id="resultDisplay">Pick your Weapon:</h1>
-
+      <!-- Choice buttons with images for Rock, Paper, Scissors -->
       <div class="choices">
-        <!-- Buttons with ARIA labels for accessibility -->
         <button aria-label="Choose Rock">
           <img src="assets/img/rock.svg" alt="Rock" />
         </button>
@@ -24,6 +23,7 @@
       </div>
 
       <section id="gameInfo">
+        <!-- Displays for player and computer choices -->
         <div id="playerDisplay" class="choiceDisplay">
           PLAYER: <img id="playerChoiceImage" src="" alt="Player's choice" />
         </div>
@@ -32,6 +32,7 @@
           <img id="computerChoiceImage" src="" alt="Computer's choice" />
         </div>
         <div id="resultDisplay" aria-live="polite"></div>
+        <!-- Score display -->
         <div id="scoreDisplay" class="scoreDisplay">
           Player: <span id="playerScoreDisplay">0</span> | Computer:
           <span id="computerScoreDisplay">0</span>
