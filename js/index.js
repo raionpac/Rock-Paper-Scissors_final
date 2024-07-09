@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// Function to play the corresponding sound
+// Function to play the sound
 function playSound(choice) {
     let soundFile;
     switch(choice) {
@@ -73,7 +73,7 @@ function displayResult(playerChoice, computerChoice, result) {
     computerDisplay.src = `assets/img/${computerChoice}.svg`;
     computerDisplay.style.display = 'block';
 
-    // Update the result text and apply color based on the result
+    // Update the result text and apply colour based on the result
     resultDisplay.textContent = `You ${result}! `;
     resultDisplay.classList.remove('greenText', 'redText'); // Remove previous result color classes
     if (result === 'Win') {
